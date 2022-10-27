@@ -10,9 +10,10 @@
         body {
             background-color: #ccc;
             background-image: url(images/bg1.png);
-            background-repeat: no-repeat;
+            /* 背景平铺，是北京无缝衔接 */
+            background-repeat: repeat-x;
             background-position: 0 -90%;
-            animation: bg_move 10s linear infinite backwards;
+            animation: bg_move 5s linear infinite;
         }
 
         .bear {
@@ -46,7 +47,8 @@
         
             }
             100% {
-                background-position: 100% -90%;
+                /* 使背景无缝衔接 */
+                background-position: -3840px -90%;
             }
         }
 
